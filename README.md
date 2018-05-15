@@ -52,3 +52,20 @@ Below is a line of code that is an example from one of my rigs.
 
 
 Good luck & happy mining!
+
+# Overclocking (Advanced) Linux Ubuntu 16.0.4 + NVIDIA
+
+Great! So now you area all setup and mining ethereum.  You are now wondering, is it possible for me to mine even more Ethereum while using less energy?  Yes!  To do that, you should follow these steps.
+
+# Setting up Coolbits:
+
+sudo nvidia-xconfig -a --cool-bits=28 --allow-empty-initial-configuration
+
+Verify the file has been edited: (look for coolbits & all your graphics cards & no comment (#) in front of Option  Coolbits)
+
+	sudo nano /etc/X11/xorg.conf
+
+Edit overclocking script
+	nano overclock.sh
+
+An example overclocking script from my desktop, where I have one 1080 TI and one 1060 is attached as a bash file for reference.
