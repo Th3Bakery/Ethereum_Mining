@@ -69,3 +69,17 @@ Edit overclocking script
 	nano overclock.sh
 
 An example overclocking script from my desktop, where I have one 1080 TI and one 1060 is attached as a bash file for reference.
+
+# NVIDIA 1080 TI Overclock Settings
+
+To find the 'optimal' memory offset, i slowly stepped up the memory clock in steps of 50 MHz until I reached a maximum amount.  I found that at 700MHz my hash rate started to decrease.  Your card may be different (especially if it is a different manufacturer than ASUS and may have a different 'optimal' memory offset.
+
+memoryOffset: +650 MHz, I was able to obtain ~34.56 MH/s using ethminer. 
+
+I set a power limit of 213 for my 1080 TI - I didn't reduce the power so low that the card/computer shut down.  I just reduced it to about 70% of the maximum power draw. 
+
+# NVIDIA 1060 Overclock Settings
+
+memory offset: + 800 MHz, I was able to obtain 18.56 MH/s using ethminer. 
+
+power limit: 150.  This could likely be set lower for even more power consumption. 
